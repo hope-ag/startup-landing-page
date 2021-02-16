@@ -22,6 +22,7 @@
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     grid-gap: 1rem;
+    grid-row-gap: 1.8rem;
     .card {
       align-items: initial;
       background-color: $clr-white;

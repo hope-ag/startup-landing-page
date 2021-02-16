@@ -1,6 +1,6 @@
 .lower {
   position: relative;
-  margin-top: 6rem;
+  margin-top: 4rem;
   align-items: initial;
   justify-content: space-between;
   input {
@@ -11,6 +11,7 @@
     border: 1px solid rgba($clr-black, 0.15);
     border-radius: 6rem;
     padding: 0 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .left {
