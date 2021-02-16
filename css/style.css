@@ -718,6 +718,30 @@ header .menu .close circle {
           box-shadow: 2px 3px 6px rgba(51, 51, 51, 0.2);
 }
 
+.bottom .right-cards .card:nth-of-type(3n) .icon {
+  background-color: #97085c;
+}
+
+.bottom .right-cards .card:nth-of-type(n + 1) .icon {
+  background-color: #9514fe;
+}
+
+.bottom .right-cards .card:nth-of-type(6) .icon {
+  background-color: #c2951a;
+}
+
+.bottom .right-cards .card:nth-of-type(2) .icon {
+  background-color: #fe1491;
+}
+
+.bottom .right-cards .card:nth-of-type(2n + 3) .icon {
+  background-color: #241cad;
+}
+
+.bottom .right-cards .card:nth-of-type(5) .icon {
+  background-color: #0f8336;
+}
+
 .bottom .right-cards .icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -731,7 +755,6 @@ header .menu .close circle {
   width: 5rem;
   border-radius: 50%;
   margin-right: 1.4rem;
-  background-color: #ff8300;
 }
 
 .bottom .right-cards .icon svg path {
