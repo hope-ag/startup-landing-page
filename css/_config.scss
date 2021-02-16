@@ -28,6 +28,23 @@ body {
   overflow-x: hidden;
   color: $clr-black;
   scroll-behavior: smooth;
+  background-image: url("/img/Path3.svg");
+  background-size: cover;
+  background-position: right;
+  background-position-y: bottom;
+  &::-webkit-scrollbar {
+    background: transparent;
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    width: 0.8rem;
+    background-color: rgba($clr-primary, 0.5);
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 }
 
 button {
