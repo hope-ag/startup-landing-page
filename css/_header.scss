@@ -1,0 +1,117 @@
+header {
+  width: 100%;
+  height: 7rem;
+  nav {
+    margin-left: auto;
+    height: 100%;
+
+    .links li {
+      height: 100%;
+
+      a {
+        margin: 0 1.5em;
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        line-height: 7rem;
+        @include tablet {
+          display: block;
+          font-weight: bold;
+          margin: 0;
+          width: 100vw;
+          text-align: center;
+          padding: 1rem 0;
+          &.active {
+            background-color: $clr-white;
+            color: $clr-primary;
+          }
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 0.6rem;
+          width: 0%;
+          border-radius: 2rem;
+          left: 0;
+          bottom: 0;
+          @include transition-short;
+          background-color: $clr-primary;
+          @include tablet {
+            display: none;
+          }
+        }
+        &:hover::after,
+        &.active::after {
+          width: 100%;
+        }
+      }
+    }
+    ul.links {
+      @include tablet {
+        display: none;
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+        width: 100vw;
+        top: 6.8rem;
+        left: 100%;
+        z-index: 10;
+        background-color: $clr-white;
+        box-shadow: 0 5px 10px 0 rgba(#000, 0.2);
+        &.shown {
+          display: block;
+          @include transition-short;
+          left: 0;
+        }
+      }
+    }
+  }
+  .logo {
+    cursor: pointer;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-left: 0.5em;
+      svg {
+        fill: $clr-primary;
+      }
+    }
+  }
+  .btn {
+    @include tablet {
+      width: 90vw;
+      display: block;
+      margin: 1.5rem auto;
+    }
+  }
+  .btn.plain {
+    background: none;
+    outline: none;
+    font-weight: bold;
+    color: $clr-primary;
+  }
+  .menu {
+    justify-content: center;
+    display: none;
+    margin-left: auto;
+    @include tablet {
+      display: flex;
+    }
+    & .close,
+    & .burger {
+      height: 4rem;
+      width: 4rem;
+    }
+    & .burger rect,
+    & .close rect {
+      fill: $clr-black;
+    }
+
+    & .burger circle,
+    & .close circle {
+      stroke: $clr-black;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.right {
+  flex-shrink: 0;
+  width: 100%;
+  flex: 35%;
+  height: 55vh;
+  .sidebar {
+    margin: 0 0 4rem auto;
+    background-color: $clr-gray;
+    .heading {
+      padding: 0.3rem;
+      background-color: $clr-secondary;
+      color: $clr-white;
+      font-size: 1.7rem;
+    }
+    .scroll {
+      background-color: $clr-gray;
+      height: 90%;
+      overflow-y: scroll;
+      position: relative;
+      &::-webkit-scrollbar {
+        background: transparent;
+        width: 0.7rem;
+        position: absolute;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 2rem;
+        background-color: rgba($clr-primary, 0.5);
+        position: absolute;
+        right: -5rem;
+      }
+    }
+    .item {
+      h3 {
+        color: $clr-secondary;
+        padding: 1.5rem 0 0;
+      }
+      border-bottom: 1px solid rgba($clr-black, 0.3);
+      .btn {
+        height: 3rem;
+        margin: 1.2rem 1.2rem 0 0;
+        &.secondary {
+          width: 50%;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}
