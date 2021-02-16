@@ -36,7 +36,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border-radius: 2rem;
   width: 0.8rem;
-  background-color: rgba(254, 20, 145, 0.5);
+  background-color: rgba(255, 131, 0, 0.5);
 }
 
 body::-webkit-scrollbar-track {
@@ -64,7 +64,7 @@ a {
   outline: none;
   border: none;
   color: #fff;
-  background-color: #fe1491;
+  background-color: #ff8300;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -75,25 +75,25 @@ a {
 }
 
 .btn.secondary {
-  background-color: #6c63ff;
+  background-color: #00a6ce;
   color: #fff;
 }
 
 .btn.outline.secondary {
-  border: 1px solid #6c63ff;
+  border: 1px solid #00a6ce;
   background-color: transparent;
   color: #333;
 }
 
 .btn.outline {
-  border: 1px solid #fe1491;
+  border: 1px solid #ff8300;
   background-color: transparent;
   color: #333;
 }
 
 .btn.outline:hover {
   color: #fff;
-  background-color: #fe1491;
+  background-color: #ff8300;
 }
 
 .flex {
@@ -162,7 +162,7 @@ header nav .links li a {
   }
   header nav .links li a.active {
     background-color: #fff;
-    color: #fe1491;
+    color: #ff8300;
   }
 }
 
@@ -176,7 +176,7 @@ header nav .links li a::after {
   bottom: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #fe1491;
+  background-color: #ff8300;
 }
 
 @media screen and (max-width: 930px) {
@@ -224,8 +224,8 @@ header .logo h1 {
   margin-left: 0.5em;
 }
 
-header .logo h1 svg {
-  fill: #fe1491;
+header .logo svg path {
+  fill: #ff8300;
 }
 
 @media screen and (max-width: 930px) {
@@ -240,7 +240,7 @@ header .btn.plain {
   background: none;
   outline: none;
   font-weight: bold;
-  color: #fe1491;
+  color: #ff8300;
 }
 
 header .menu {
@@ -493,7 +493,7 @@ header .menu .close circle {
 .lower .left .cards::-webkit-scrollbar-thumb {
   border-radius: 2rem;
   width: 1rem;
-  background-color: rgba(254, 20, 145, 0.5);
+  background-color: rgba(255, 131, 0, 0.5);
 }
 
 .lower .left .cards::-webkit-scrollbar-track {
@@ -540,7 +540,7 @@ header .menu .close circle {
 
 .lower .left .cards .card .desc h2 {
   font-weight: bold;
-  color: #fe1491;
+  color: #ff8300;
   font-size: 2rem;
   margin: 0.4em 0;
 }
@@ -558,13 +558,13 @@ header .menu .close circle {
 }
 
 .lower .left .cards .card .btn {
-  color: #6c63ff;
-  border: 1px solid #6c63ff;
+  color: #00a6ce;
+  border: 1px solid #00a6ce;
   margin: 1rem 0;
 }
 
 .lower .left .cards .card .btn:hover {
-  background-color: #6c63ff;
+  background-color: #00a6ce;
   color: #fff;
 }
 
@@ -601,7 +601,7 @@ header .menu .close circle {
 
 .right .sidebar .heading {
   padding: 1rem 0.4rem;
-  background-color: #6c63ff;
+  background-color: #00a6ce;
   color: #fff;
   font-size: 1.7rem;
 }
@@ -621,7 +621,7 @@ header .menu .close circle {
 
 .right .sidebar .scroll::-webkit-scrollbar-thumb {
   border-radius: 2rem;
-  background-color: rgba(254, 20, 145, 0.5);
+  background-color: rgba(255, 131, 0, 0.5);
   position: absolute;
   right: -5rem;
 }
@@ -631,7 +631,7 @@ header .menu .close circle {
 }
 
 .right .sidebar .item h3 {
-  color: #6c63ff;
+  color: #00a6ce;
   padding: 1.5rem 0 0;
 }
 
@@ -680,7 +680,7 @@ header .menu .close circle {
 .bottom .left-text h2 {
   font-size: 3.2rem;
   padding-bottom: 2rem;
-  color: #6c63ff;
+  color: #00a6ce;
 }
 
 .bottom .left-text p {
@@ -731,7 +731,7 @@ header .menu .close circle {
   width: 5rem;
   border-radius: 50%;
   margin-right: 1.4rem;
-  background-color: #fe1491;
+  background-color: #ff8300;
 }
 
 .bottom .right-cards .icon svg path {
