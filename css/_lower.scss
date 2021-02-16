@@ -3,6 +3,10 @@
   margin-top: 4rem;
   align-items: initial;
   justify-content: space-between;
+  @include tablet {
+    flex-direction: column;
+    margin-top: 6rem;
+  }
   input {
     width: 100%;
     height: 5rem;
@@ -18,17 +22,25 @@
     flex-basis: 70%;
     flex-grow: 0;
     flex-shrink: 0;
+    width: 60vw;
+    @include tablet {
+      width: 100%;
+      flex-basis: 100%;
+    }
     .cards {
-      background-image: url("/img/bg.jpg");
+      background: $clr-white;
       display: flex;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 60vw;
+      // max-width: 60vw;
       flex-grow: 0;
       border-radius: 1rem;
+      margin-right: 0;
       flex-shrink: 0;
       overflow-x: scroll;
       margin-top: 2rem;
+      @include tablet {
+        width: 100%;
+        max-width: unset;
+      }
       &::-webkit-scrollbar {
         background: transparent;
         height: 0.8rem;
@@ -49,16 +61,24 @@
         flex-shrink: 0;
         margin: 1rem;
         padding: 1rem;
+
         width: 25rem;
         background-image: url("/img/Path.svg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: right;
         background-position-y: bottom;
+        box-shadow: 2px 3px 8px rgba($clr-black, 0.18);
+        @include tablet {
+          min-width: 22rem;
+        }
 
         img {
           width: 100%;
           height: 18rem;
+          @include tablet {
+            height: 14rem;
+          }
         }
         .desc {
           h2 {
@@ -68,8 +88,12 @@
             margin: 0.4em 0;
           }
           ul li {
-            list-style: circle;
+            list-style: disc;
             line-height: 1.8;
+            @include tablet {
+              list-style-position: inside;
+              line-height: 1.8;
+            }
           }
         }
         .btn {

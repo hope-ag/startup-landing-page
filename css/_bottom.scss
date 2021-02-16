@@ -1,6 +1,9 @@
 .bottom {
   align-items: initial;
   margin-top: 5rem;
+  @include tablet {
+    flex-direction: column;
+  }
 
   .left-text {
     width: 20vw;
@@ -8,26 +11,32 @@
     flex-shrink: 0;
     margin-right: 2rem;
     h2 {
-      font-size: 2.4rem;
+      font-size: 3.2rem;
       padding-bottom: 2rem;
       color: $clr-secondary;
     }
     p {
       line-height: 1.7;
     }
+    @include tablet {
+      margin-right: 0;
+      min-width: unset;
+      width: 90%;
+      margin: 3rem auto;
+    }
   }
   .right-cards {
     margin-bottom: 10rem;
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     grid-gap: 1rem;
     grid-row-gap: 1.8rem;
     .card {
       align-items: initial;
       background-color: $clr-white;
       border-radius: 1rem;
-      padding: 1rem;
+      padding: 2rem 1rem;
       box-shadow: 2px 3px 6px rgba($clr-black, 0.2);
     }
 
@@ -35,6 +44,7 @@
       align-items: center;
       justify-content: center;
       height: 5rem;
+      flex-shrink: 0;
       width: 5rem;
       border-radius: 50%;
       margin-right: 1.4rem;
@@ -50,7 +60,7 @@
       }
       li {
         list-style: disc;
-        line-height: 2;
+        line-height: 2.5;
       }
     }
   }
