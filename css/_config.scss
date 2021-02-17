@@ -115,10 +115,11 @@ a {
 .container {
   width: 93%;
   height: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 0 1rem;
   // overflow-x: hidden;
-  background-color: $clr-bg;
+  background-color: rgba($clr-bg, 0.5);
   // &::-webkit-scrollbar {
   //   background: transparent;
   //   width: 0.7rem;

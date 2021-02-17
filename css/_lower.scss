@@ -32,6 +32,7 @@
       display: flex;
       // max-width: 60vw;
       flex-grow: 0;
+      border: 0.4px solid rgba($clr-black, 0.1);
       border-radius: 1rem;
       margin-right: 0;
       flex-shrink: 0;
@@ -56,6 +57,7 @@
       .card {
         background: $clr-white;
         border-radius: 1rem;
+        border: 0.4px solid rgba($clr-black, 0.1);
         overflow: hidden;
         display: inline-flex;
         flex-shrink: 0;
@@ -68,7 +70,7 @@
         background-size: contain;
         background-position: right;
         background-position-y: bottom;
-        box-shadow: 2px 3px 8px rgba($clr-black, 0.18);
+        box-shadow: 2px 3px 6px rgba($clr-black, 0.2);
         @include tablet {
           min-width: 22rem;
         }

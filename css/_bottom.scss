@@ -9,14 +9,14 @@
     width: 20vw;
     min-width: 20rem;
     flex-shrink: 0;
-    margin-right: 2rem;
+    margin-right: 0;
     h2 {
       font-size: 3.2rem;
       padding-bottom: 2rem;
       color: $clr-secondary;
     }
     p {
-      line-height: 1.7;
+      line-height: 2.2;
     }
     @include tablet {
       margin-right: 0;
