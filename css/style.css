@@ -575,7 +575,6 @@ header .menu .close circle {
   -webkit-box-flex: 35%;
       -ms-flex: 35%;
           flex: 35%;
-  height: 60vh;
 }
 
 @media screen and (max-width: 930px) {
@@ -589,6 +588,7 @@ header .menu .close circle {
 .right .sidebar {
   border-radius: 1rem;
   overflow: hidden;
+  height: 60vh;
   margin: 0 0 5rem auto;
   background-color: #fff;
   -webkit-box-shadow: -2px 3px 8px rgba(51, 51, 51, 0.18);
